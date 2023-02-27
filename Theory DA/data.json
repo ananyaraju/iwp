@@ -1,0 +1,17 @@
+[
+    { "state": "uttar pradesh", "district": "agra", "date": "01-01-2020", "infected": 1000, "recovered": 300, "vaccinated": 100000 },
+    { "state": "uttar pradesh", "district": "ghaziabad", "date": "01-01-2020", "infected": 2000, "recovered": 700, "vaccinated": 150000 },
+    { "state": "uttar pradesh", "district": "fatehpur", "date": "01-01-2020", "infected": 500, "recovered": 100, "vaccinated": 10000 },
+    { "state": "uttar pradesh", "district": "lucknow", "date": "01-01-2020", "infected": 2000, "recovered": 600, "vaccinated": 200000 },
+    { "state": "uttar pradesh", "district": "varanasi", "date": "01-01-2020", "infected": 800, "recovered": 200, "vaccinated": 180000 },
+    { "state": "tamil nadu", "district": "chennai", "date": "01-01-2020", "infected": 5000, "recovered": 1000, "vaccinated": 130000 },
+    { "state": "tamil nadu", "district": "coimbatore", "date": "01-01-2020", "infected": 2000, "recovered": 400, "vaccinated": 120000 },
+    { "state": "tamil nadu", "district": "madurai", "date": "01-01-2020", "infected": 700, "recovered": 100, "vaccinated": 90000 },
+    { "state": "tamil nadu", "district": "ranipet", "date": "01-01-2020", "infected": 400, "recovered": 150, "vaccinated": 50000 },
+    { "state": "tamil nadu", "district": "vellore", "date": "01-01-2020", "infected": 1000, "recovered": 300, "vaccinated": 60000 },
+    { "state": "maharashtra", "district": "nashik", "date": "01-01-2020", "infected": 1000, "recovered": 500, "vaccinated": 120000 },
+    { "state": "maharashtra", "district": "pune", "date": "01-01-2020", "infected": 6000, "recovered": 2000, "vaccinated": 250000 },
+    { "state": "maharashtra", "district": "thane", "date": "01-01-2020", "infected": 1200, "recovered": 300, "vaccinated": 80000 },
+    { "state": "maharashtra", "district": "nagpur", "date": "01-01-2020", "infected": 900, "recovered": 200, "vaccinated": 70000 },
+    { "state": "maharashtra", "district": "mumbai", "date": "01-01-2020", "infected": 8000, "recovered": 3000, "vaccinated": 300000 }
+]

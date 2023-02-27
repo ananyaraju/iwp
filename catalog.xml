@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<catalog>
+<Product>
+<Name>Sony TV </Name>
+<Prize> Rs 100000</Prize>
+<Category>Home Appliances</Category>
+</Product>
+<Product>
+<Name>LG Washing Machine </Name>
+<Prize>25,000 </Prize>
+<Category>Home Appliances</Category>
+</Product>
+</catalog>

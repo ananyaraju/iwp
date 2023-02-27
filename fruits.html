@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#apple {
+    padding: 5px 5px;
+    width: 10%;
+    text-align: center;
+    background-color: rgb(252, 129, 110);
+    margin-top: 5px;
+    display: none;
+}
+
+#banana {
+    padding: 5px 5px;
+    width: 10%;
+    text-align: center;
+    background-color: rgb(232, 230, 106);
+    margin-top: 5px;
+    display: none;
+}
+
+#mango {
+    padding: 5px 5px;
+    width: 10%;
+    text-align: center;
+    background-color: rgb(232, 182, 106);
+    margin-top: 5px;
+    display: none;
+}
+
+#grape {
+    padding: 5px 5px;
+    width: 10%;
+    text-align: center;
+    background-color: rgb(169, 106, 232);
+    margin-top: 5px;
+    display: none;
+}
+
+#kiwi {
+    padding: 5px 5px;
+    width: 10%;
+    text-align: center;
+    background-color: rgb(106, 232, 119);
+    margin-top: 5px;
+    display: none;
+}
+
+</style>
+</head>
+<body>
+<h1 style="text-align: center">Fruits and their Colors</h1>
+
+<ul>
+    <div class="fruit">
+        <li>Apple</li>
+        <div id="apple">
+            red
+        </div>
+    </div>
+    <br>
+
+    <div class="fruit">
+        <li>Banana</li>
+        <div id="banana">
+            yellow
+        </div>
+    </div>
+    <br>
+    <div class="fruit">
+        <li>Mango</li>
+        <div id="mango">
+            orange
+        </div>
+    </div>
+    <br>
+
+    <div class="fruit">
+        <li>Grape</li>
+        <div id="grape">
+            purple
+        </div>
+    </div>
+    <br>
+
+    <div class="fruit">
+        <li>Kiwi</li>
+        <div id="kiwi">
+            green
+        </div>
+    </div>
+    <br>
+</ul>
+
+<button onclick="showColors()">Show Colors</button>
+
+<script>
+    function showColors() {
+        var x = document.getElementById("apple");
+        var y = document.getElementById("banana");
+        var z = document.getElementById("mango");
+        var w = document.getElementById("grape");
+        var v = document.getElementById("kiwi");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+
+        if (z.style.display === "none") {
+            z.style.display = "block";
+        } else {
+            z.style.display = "none";
+        }
+
+        if (w.style.display === "none") {
+            w.style.display = "block";
+        } else {
+            w.style.display = "none";
+        }
+
+        if (v.style.display === "none") {
+            v.style.display = "block";
+        } else {
+            v.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

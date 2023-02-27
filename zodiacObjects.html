@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Khushi LabCat</title>
+    <script>
+        const ox = {
+            numbers: [1,9],
+            colors: ["red","blue","purple"]
+        };
+        const tiger = {
+            numbers: [1,3,4],
+            colors: ["grey","blue","white","orange"]
+        };
+        const rabbit = {
+            numbers: [3,4,9],
+            colors: ["red","blue","pink","purple"]
+        };
+        const dragon = {
+            numbers: [1,6,7],
+            colors: ["gold","silver","hoary"]
+        };
+        const snake = {
+            numbers: [2,8,9],
+            colors: ["red","light yellow","black"]
+        };
+        const horse = {
+            numbers: [2,3,7],
+            colors: ["brown","yellow","purple"]
+        };
+        const sheep = {
+            numbers: [3,4,9],
+            colors: ["green","red","purple"]
+        };
+        const monkey = {
+            numbers: [1,7,8],
+            colors: ["white","gold","blue"]
+        };
+        const rooster = {
+            numbers: [5,7,8],
+            colors: ["gold","brown","yellow"]
+        };
+        const dog = {
+            numbers: [3,4,9],
+            colors: ["green","red","purple"]
+        };
+        const pig = {
+            numbers: [2,5,8],
+            colors: ["yellow","grey","brown","gold"]
+        };
+        const rat = {
+            numbers: [2,3],
+            colors: ["gold,blue,green"]
+        };
+        function putValue() {
+            let myyear = document.getElementById("year").value;
+            let y = parseInt(myyear);
+            let sign = y%12;
+            let zodiac = "";
+            let num=[]; let col=[];
+            if (sign === 0) {
+                zodiac = "monkey";
+                num = monkey.numbers;
+                col = monkey.colors;
+            }
+            else if (sign === 1) {
+                zodiac = "rooster";
+                num = rooster.numbers;
+                col = rooster.colors;
+            }
+            else if (sign === 2) {
+                zodiac = "dog";
+                num = dog.numbers;
+                col = dog.colors;
+            }
+            else if (sign === 3) {
+                zodiac = "pig";
+                num = pig.numbers;
+                col = pig.colors;
+            }
+            else if (sign === 4) {
+                zodiac = "rat";
+                num = rat.numbers;
+                col = rat.colors;
+            }
+            else if (sign === 5) {
+                zodiac = "ox";
+                num = ox.numbers;
+                col = ox.colors;
+            }
+            else if (sign === 6) {
+                zodiac = "tiger";
+                num = tiger.numbers;
+                col = tiger.colors;
+            }
+            else if (sign === 7) {
+                zodiac = "rabbit";
+                num = rabbit.numbers;
+                col = rabbit.colors;
+            }
+            else if (sign === 8) {
+                zodiac = "dragon";
+                num = dragon.numbers;
+                col = dragon.colors;
+            }
+            else if (sign === 9) {
+                zodiac = "snake";
+                num = snake.numbers;
+                col = snake.colors;
+            }
+            else if (sign === 10) {
+                zodiac = "horse";
+                num = horse.numbers;
+                col = horse.colors;
+            }
+            else if (sign === 11) {
+                zodiac = "sheep";
+                num = sheep.numbers;
+                col = sheep.colors;
+            }
+            document.getElementById("birthyear").innerHTML = y;
+            document.getElementById("zodiactext").innerHTML = zodiac;
+            document.getElementById("luckynumbers").innerHTML = num;
+            document.getElementById("luckycolors").innerHTML = col;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        Birth Year: <input type="text" id="year" name="year">
+        <button onClick="putValue()">Get lucky information</button>
+        <br><br>
+        My birth year: <p id="birthyear"></p>
+        My zodiac sign: <p id="zodiactext"></p>
+        My lucky numbers: <p id="luckynumbers"></p>
+        My lucky colors: <p id="luckycolors"></p>
+    </div>
+</body>
+</html>

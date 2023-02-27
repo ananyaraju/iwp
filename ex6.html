@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 6</title>
+    <style>
+        body {
+            font-family: system-ui;
+            background: blanchedalmond;
+            color: black;
+            text-align: center;
+        }
+        #clock {
+            text-align: right;
+            padding: 10px;
+            line-height: 10px;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        #component {
+            display: flex;
+            justify-content: left;
+        }
+        p, button, input[type=text] {
+            margin: 10px;
+            padding: 2px;
+        }
+        select {
+            margin: 10px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body onLoad="displayLastModifiedDate(), clockdisplay()">
+    <script>
+        function clockdisplay() {
+            var currentTime = new Date();
+            var currentHours = currentTime.getHours();
+            var currentMins = currentTime.getMinutes();
+            var currentSecs = currentTime.getSeconds();
+            currentMins = (currentMins < 10 ? "0" : "") + currentMins;
+            currentSecs = (currentSecs < 10 ? "0" : "") + currentSecs;
+            var timeString = currentHours + " : " + currentMins + " : " + currentSecs;
+            document.getElementById("clock").innerHTML = timeString;
+            setInterval(clockdisplay, 1000);
+        }
+        function promptforname() {
+            let n = prompt("Please Enter Your Name","Name");
+            let msg = "Welcome " + n + " !!";
+            alert(msg);
+        }
+        function displayLastModifiedDate() {
+            let modDate = document.lastModified;
+            document.getElementById("lastModified").innerHTML = modDate;
+        }
+        function isEmpty() {
+            let s = document.getElementById("text").value;
+            let s_length = s.length;
+            if (s_length === 0) {
+                document.getElementById("emptyresult").innerHTML = "String is empty.";
+            }
+            else {
+                document.getElementById("emptyresult").innerHTML = "String is not empty.";
+            }
+        }
+        const phone1 = {
+            model: "iPhone 12",
+            color: "purple",
+            storage: "256GB",
+            screen: "6 inch",
+            camera: "12MP"
+        };
+        const phone2 = {
+            model: "iPhone 13",
+            color: "black",
+            storage: "256GB",
+            screen: "6 inch",
+            camera: "12MP"
+        };
+        const phone3 = {
+            model: "One Plus 8",
+            color: "white",
+            storage: "64GB",
+            screen: "6.5 inch",
+            camera: "48MP"
+        };
+        const phone4 = {
+            model: "Samsung Galaxy S9",
+            color: "black",
+            storage: "64GB",
+            screen: "6.2 inch",
+            camera: "10MP"
+        };
+        const phone5 = {
+            model: "iPhone 12",
+            color: "silver",
+            storage: "128GB",
+            screen: "7 inch",
+            camera: "16MP"
+        };
+        function putValue() {
+            let modelname = String(document.getElementById("model").value);
+            let m, s, c;
+            if (modelname === "phone1") {
+                m = phone1.model;
+                s = phone1.screen;
+                c = phone1.camera;
+            }
+            else if (modelname === "phone2") {
+                m = phone2.model;
+                s = phone2.screen;
+                c = phone2.camera;
+            }
+            else if (modelname === "phone3") {
+                m = phone3.model;
+                s = phone3.screen;
+                c = phone3.camera;
+            }
+            else if (modelname === "phone4") {
+                m = phone4.model;
+                s = phone4.screen;
+                c = phone4.camera;
+            }
+            else if (modelname === "phone5") {
+                m = phone5.model;
+                s = phone5.screen;
+                c = phone5.camera;
+            }
+            document.getElementById("phonetext").innerHTML = "Model Chosen: " + m;
+            document.getElementById("screentext").innerHTML = "Screen Specification: " + s;
+            document.getElementById("cameratext").innerHTML = "Camera Specification: " + c;
+        }
+    </script>
+    <div id="clock" onload="clockdisplay()"></div>
+    <div id="container">
+        <div id="component">
+            <p>Prompting name and displaying it as pop-up:</p>
+            <button onclick="promptforname()">Click to Enter Name</button>
+            <br>
+        </div>
+        <div id="component">
+            <p>Last Modified Date: </p>
+            <p id="lastModified"></p>
+        </div>
+        <div id="component">
+            <p>Enter a String: </p>
+            <input type="text" id="text" name="text">
+            <button onclick="isEmpty()">Check String is Empty or Not</button>
+            <p id="emptyresult"></p>
+        </div>
+        <div id="component">
+            <select name="model" id="model">
+                <option value="phone1">iPhone 12</option>
+                <option value="phone2">iPhone 13</option>
+                <option value="phone3">OnePlus 8</option>
+                <option value="phone4">Samsung Galaxy S9</option>
+                <option value="phone5">Oppo 9</option>
+            </select>
+            <button onclick="putValue()">Click to know more</button>
+            <p id="phonetext"></p> <p id="screentext"></p> <p id="cameratext"></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Covid-19 Data</title>
+    <script src="firstapi.js"></script>
+    <script src="secondapi.js"></script>
+</head>
+
+<body>
+    <button onclick="firstapi()"> Display top 10 vaccinated districts </button>
+    <div>
+        <p id="p0"></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <p id="p6"></p>
+        <p id="p7"></p>
+        <p id="p8"></p>
+        <p id="p9"></p>
+    </div>
+    <br><br>
+
+    Select the State Name:
+    <select name="state" id="state">
+        <option value="uttar pradesh">Uttar Pradesh</option>
+        <option value="tamil nadu">Tamil Nadu</option>
+        <option value="maharashtra">Maharashtra</option>
+    </select>
+    <button onclick="secondapi()">Display selected state's total counts</button>
+    <br>
+    Total Recovered: <p id="recoverycount"></p>
+    <br>Total Infected: <p id="infectcount"></p>
+</body>
+
+</html>

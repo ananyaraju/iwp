@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 60%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+</style>
+<title>Subscription Page</title>
+</head>
+<body style="background-color: #9fc9ba">
+<h1 style="text-align: center">Customer Subscription Form</h1>
+<div class="main">
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name:</label>
+    </div>
+    <div class="col-50">
+      <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name:</label>
+    </div>
+    <div class="col-50">
+      <input type="text" id="lname" name="lastname" placeholder="Enter Your Last Name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="phone">Phone Number:</label>
+    </div>
+    <div class="col-50">
+      <input type="text" id="phone" name="phone" placeholder="Enter Your Phone Number">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="address">Address:</label>
+    </div>
+    <div class="col-50">
+        <textarea rows="4" cols="50" name="address" form="usrform" placeholder="Enter Your Address"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+        <label for="plan">Choose Your Plan:</label>
+    </div>
+    <div class="col-50">
+        <input type="radio" id="plan1" name="plan" value="plan1">
+        <label for="plan1">Basic Plan</label><br>
+        <input type="radio" id="plan2" name="plan" value="plan2">
+        <label for="plan2">Entertainment Plan</label><br>
+        <input type="radio" id="plan3" name="plan" value="plan3">
+        <label for="plan3">Deluxe Plan</label><br>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+</div>
+
+</body>
+</html>

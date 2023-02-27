@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title> Location </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<label for="locatios"> Choose a Location </label>
+<select name="locations" id="locations" onChange="update()">
+<option value="vellore"> Vellore </option>
+<option value="chennai"> Chennai </option>
+</select>
+<p id="l1"> Selected location </p>
+<p id="l2"> </p>
+<script type="text/javascript">
+function update()
+{
+var select;
+   select=document.getElementById("locations");
+   var y = select.options[select.selectedIndex].value;   
+   document.getElementById("l1").innerHTML=y;
+}
+</script>
+<a href="htmlcss_background.html">Home</a>
+</body>
+</html>
