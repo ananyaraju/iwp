@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+
+            var parser, xmlDoc, text;
+            text = "<Food_Menu><Item>" +
+            "<Name> food 1 </Name>" +
+            "<Price>Rs 20 </Price>" +
+            "<Parcel>Yes</Parcel>" +
+            "</Item></Food_Menu>";
+            
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(text,"text/xml");
+            
+            document.getElementById("demo").innerHTML =
+            xmlDoc.getElementsByTagName("Parcel")[0].childNodes[0].nodeValue;
+            
+        </script>
+    </body>
+</html>
